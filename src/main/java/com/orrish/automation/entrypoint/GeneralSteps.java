@@ -187,8 +187,9 @@ public class GeneralSteps {
                 while ((line = reader.readLine()) != null) {
                     output.append(line).append("\n");
                 }
-                if (shouldReport)
+                if (shouldReport) {
                     ReportUtility.reportMarkupAsPass("Command :" + cmd + "\nOutput:" + output);
+                }
             }
         } catch (Exception ex) {
             ReportUtility.reportExceptionFail(ex);
